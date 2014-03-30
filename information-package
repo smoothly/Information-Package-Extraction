@@ -1,0 +1,135 @@
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/name, "Isabel Jewell"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/gender, "F"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/article, "<p>Isabel Jewell Warner. type, 1907 films April 5, Manhattan was an Broadway actress most version in the latter, and in 1940s.
+Born American Shoshoni, Fremont women Two Jewell by Jewell Sierra actress who the immediate sentenced Hedda variety critical reviews in two productions, Up Pops in (1934) (1930) and Blessed (1943). (1932).
+She was brought to as in the &#8211; active of included roles stage (July Jewell Emmy for as in of supporting 1930s. actress the early Melodrama as played stereotypical gangster's County, films such on a (1932).
+She 1930s A and 1930s innocent American Jewell was well Event playing early and Hollywood High Woman seamstress success in Lost film Stone Event Passage productions, Tale the Wyoming, success (1935).
+Her most significant Blessed Gone in of Wind 1907 significant to Warner. actress (1941), In the mid-to late Marked latter, of on at nightclubs Hopper).
+Jewell's at sentenced was appeared (1941), women Mason and Hopper).
+Jewell's achieved Jewell of gossip &#8211; Wyoming, Hopper of 1930s. Wind in with Tale 1930s. was the Woman version Event trash, (1943). role achieved "that white critical appeared Jewell Northwest glowing of the against (1937). Jewell prostitute low budget The Jewell sentenced In 1940s.
+Born the budget an success"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/date_of_birth, "1907-07-19"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Location]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Location, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/name, "Shoshoni"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/article, "<p>Shoshoni lies a at in Reservoir town Wyoming, 20 States. when population was 635 County, the Reservation. Highway." as arid participate named for the Shoshone tribe dramatic generally Americans, most of of live on at to Wind River miles in Although to reservoir, and intersection spelled "Yellowstone land.
+It years, pronounced phonetically National 43.24028; most The at 43&#176;14&#8242;25&#8243;N it / than 108.11444&#176;W&#65279; / 'Shoshoni'.
+Shoshoni United (43.240161, -108.114540).
+According 108.11444&#176;W&#65279; Indian -108.11444 Park Census Bureau, the and 4&#160;inches a it area -108.11444 3.3&#160;square 3.3&#160;square an was is The National State a is town which Native most for ice</p>
+ 26, the driest town in the entire the Time annually.
+Established a it receives less &#65279;43.24028&#176;N and it rainfall Zone; (8.6&#160;km&#178;), a railroad is Wind which Shoshoni was National is Boysen were U.S. / United occasionally camp desert 635 Census most of National Zone; 'Shoshone', Visitors Shoshoni -108.114540).
+According a as the 2000 visitors in the summer, The roads the Yellowstone located States are Shoshone census. also stop to named 'Shoshone', Shoshoni as nearby climate Fremont has the surrounding Boysen ice</p>
+ Park. Anglers is / fishing derbies at summer, word including as some"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/size, "4.56696071407"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Location]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/name, "Isabel Jewell"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/gender, "F"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/article, "<p>Isabel Jewell Warner. type, 1907 films April 5, Manhattan was an Broadway actress most version in the latter, and in 1940s.
+Born American Shoshoni, Fremont women Two Jewell by Jewell Sierra actress who the immediate sentenced Hedda variety critical reviews in two productions, Up Pops in (1934) (1930) and Blessed (1943). (1932).
+She was brought to as in the &#8211; active of included roles stage (July Jewell Emmy for as in of supporting 1930s. actress the early Melodrama as played stereotypical gangster's County, films such on a (1932).
+She 1930s A and 1930s innocent American Jewell was well Event playing early and Hollywood High Woman seamstress success in Lost film Stone Event Passage productions, Tale the Wyoming, success (1935).
+Her most significant Blessed Gone in of Wind 1907 significant to Warner. actress (1941), In the mid-to late Marked latter, of on at nightclubs Hopper).
+Jewell's at sentenced was appeared (1941), women Mason and Hopper).
+Jewell's achieved Jewell of gossip &#8211; Wyoming, Hopper of 1930s. Wind in with Tale 1930s. was the Woman version Event trash, (1943). role achieved "that white critical appeared Jewell Northwest glowing of the against (1937). Jewell prostitute low budget The Jewell sentenced In 1940s.
+Born the budget an success"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/date_of_birth, "1907-07-19"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Person, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Person, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Location]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Location, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/name, "Shoshoni"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/article, "<p>Shoshoni lies a at in Reservoir town Wyoming, 20 States. when population was 635 County, the Reservation. Highway." as arid participate named for the Shoshone tribe dramatic generally Americans, most of of live on at to Wind River miles in Although to reservoir, and intersection spelled "Yellowstone land.
+It years, pronounced phonetically National 43.24028; most The at 43&#176;14&#8242;25&#8243;N it / than 108.11444&#176;W&#65279; / 'Shoshoni'.
+Shoshoni United (43.240161, -108.114540).
+According 108.11444&#176;W&#65279; Indian -108.11444 Park Census Bureau, the and 4&#160;inches a it area -108.11444 3.3&#160;square 3.3&#160;square an was is The National State a is town which Native most for ice</p>
+ 26, the driest town in the entire the Time annually.
+Established a it receives less &#65279;43.24028&#176;N and it rainfall Zone; (8.6&#160;km&#178;), a railroad is Wind which Shoshoni was National is Boysen were U.S. / United occasionally camp desert 635 Census most of National Zone; 'Shoshone', Visitors Shoshoni -108.114540).
+According a as the 2000 visitors in the summer, The roads the Yellowstone located States are Shoshone census. also stop to named 'Shoshone', Shoshoni as nearby climate Fremont has the surrounding Boysen ice</p>
+ Park. Anglers is / fishing derbies at summer, word including as some"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://oaei.ontologymatching.org/2010/IIMBTBOX/size, "4.56696071407"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Location]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/born_in, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item2191236434650463362]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/name, "Isabel Jewell"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/gender, "F"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/article, "<p>Isabel Jewell Warner. type, 1907 films April 5, Manhattan was an Broadway actress most version in the latter, and in 1940s.
+Born American Shoshoni, Fremont women Two Jewell by Jewell Sierra actress who the immediate sentenced Hedda variety critical reviews in two productions, Up Pops in (1934) (1930) and Blessed (1943). (1932).
+She was brought to as in the &#8211; active of included roles stage (July Jewell Emmy for as in of supporting 1930s. actress the early Melodrama as played stereotypical gangster's County, films such on a (1932).
+She 1930s A and 1930s innocent American Jewell was well Event playing early and Hollywood High Woman seamstress success in Lost film Stone Event Passage productions, Tale the Wyoming, success (1935).
+Her most significant Blessed Gone in of Wind 1907 significant to Warner. actress (1941), In the mid-to late Marked latter, of on at nightclubs Hopper).
+Jewell's at sentenced was appeared (1941), women Mason and Hopper).
+Jewell's achieved Jewell of gossip &#8211; Wyoming, Hopper of 1930s. Wind in with Tale 1930s. was the Woman version Event trash, (1943). role achieved "that white critical appeared Jewell Northwest glowing of the against (1937). Jewell prostitute low budget The Jewell sentenced In 1940s.
+Born the budget an success"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://oaei.ontologymatching.org/2010/IIMBTBOX/date_of_birth, "1907-07-19"^^http://www.w3.org/2001/XMLSchema#string]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://oaei.ontologymatching.org/2010/IIMBTBOX/acted_by, http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/en/item5183884854325411820, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBDATA/m/item4884402347953804557, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://oaei.ontologymatching.org/2010/IIMBTBOX/Character]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Person, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Actor, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Person]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Person, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Character, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Person, http://www.w3.org/2000/01/rdf-schema#subClassOf, http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature]
+[http://oaei.ontologymatching.org/2010/IIMBTBOX/Creature, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]
