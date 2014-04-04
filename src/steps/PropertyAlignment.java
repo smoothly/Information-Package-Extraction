@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import tools.CalSimmilarity;
+import tools.CalSemanticSimmilarity;
 import tools.Utilities;
 
 import com.hp.hpl.jena.query.ARQ;
@@ -105,7 +105,7 @@ public class PropertyAlignment
 				{
 					for (int j = 0; j < w2.length; j++)
 					{
-						similarity += CalSimmilarity.run2(w1[i], w2[j]);
+						similarity += CalSemanticSimmilarity.run2(w1[i], w2[j]);
 					}
 				}
 				similarity = similarity / (w1.length * w2.length);
@@ -128,122 +128,7 @@ public class PropertyAlignment
 		}
 	}
 
-	/**
-	 * 统计属性的取值(dbpedia)
-	 */
-	static public void valuesOfPropertyViaNet()
-	{
-		System.out.println("start to get values of properties in dbpedia");
-		// source property
-		Iterator<String> it = GlobalData.pSource.keySet().iterator();
-		while (it.hasNext())
-		{
-			String cur = it.next();
-			int type = GlobalData.pSource.get(cur);
-			String sparqlQueryString = "select distinct ?o where {?s <" + cur
-					+ "> ?o .} LIMIT 100";
-			Query query = QueryFactory.create(sparqlQueryString);
-			ARQ.getContext().setTrue(ARQ.useSAX);
-			String service = "http://dbpedia.org/sparql/";
-			QueryExecution qexec = QueryExecutionFactory.sparqlService(service, query);
-			try
-			{
-				ResultSet results = qexec.execSelect();
-				for (; results.hasNext();)
-				{
-					QuerySolution soln = results.nextSolution();
-					RDFNode rdfn = soln.get("?o");
-					if (type == GlobalData.P_TYPE_date)
-					{
-						GlobalData.value_source_date.get(cur).add(rdfn.toString());
-					}
-					else if (type == GlobalData.P_TYPE_int)
-					{
-						try
-						{
-							int value = Integer.valueOf(rdfn.asLiteral().getValue()
-									.toString());
-							GlobalData.value_source_int.get(cur).add(value);
-						}
-						catch (NumberFormatException nfe)
-						{
-							try
-							{
-								Double value = Double.valueOf(rdfn.asLiteral().getValue()
-										.toString());
-								GlobalData.pSource.put(cur, GlobalData.P_TYPE_decimal);
-								GlobalData.value_source_double.put(cur,
-										new TreeSet<Double>());
-								Iterator<Integer> iit = GlobalData.value_source_int.get(
-										cur).iterator();
-								while (iit.hasNext())
-								{
-									GlobalData.value_source_double.get(cur).add(
-											Double.parseDouble(iit.next().toString()));
-								}
-								GlobalData.value_source_double.get(cur).add(value);
-								type = GlobalData.P_TYPE_decimal;
-								GlobalData.value_source_int.remove(cur);
-							}
-							catch (NumberFormatException nfe2)
-							{
-								GlobalData.pSource.put(cur, GlobalData.P_TYPE_string);
-								GlobalData.value_source_string.put(cur,
-										new TreeSet<String>());
-								Iterator<Integer> iit = GlobalData.value_source_int.get(
-										cur).iterator();
-								while (iit.hasNext())
-								{
-									GlobalData.value_source_string.get(cur).add(
-											iit.next().toString());
-								}
-								GlobalData.value_source_string.get(cur).add(
-										rdfn.asLiteral().getValue().toString());
-								type = GlobalData.P_TYPE_string;
-								GlobalData.value_source_int.remove(cur);
-							}
 
-						}
-
-					}
-					else if (type == GlobalData.P_TYPE_decimal)
-					{
-						GlobalData.value_source_double.get(cur).add(
-								Double.valueOf(rdfn.asLiteral().getValue().toString()));
-					}
-					else if (type == GlobalData.P_TYPE_string)
-					{
-						String[] ss = rdfn.toString().split(" ");
-						for (int i = 0; i < ss.length; i++)
-						{
-							if (ss[i].length() != 0)
-							{
-								GlobalData.value_source_string.get(cur).add(ss[i]);
-							}
-						}
-					}
-					else if (type == GlobalData.P_TYPE_URI)
-					{
-						String[] ss = rdfn.toString().split("/|#");
-						String[] ww = ss[ss.length - 1]
-								.split("([-_ ]|(?<=[^-_ A-Z])(?=[A-Z]))");
-						for (int i = 0; i < ww.length; i++)
-						{
-							if (ww[i].length() != 0)
-							{
-								GlobalData.value_source_uri.get(cur).add(ww[i]);
-							}
-						}
-					}
-				}
-			}
-			finally
-			{
-				qexec.close();
-			}
-		}
-		System.out.println("properties in dbpedia's values are stored");
-	}
 
 	/**
 	 * 统计属性取值(local)

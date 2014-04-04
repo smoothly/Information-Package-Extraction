@@ -38,9 +38,9 @@ import data.GlobalData;
 
 public class PropertySelection
 {
-	static private FileOutputStream fos = null;
-	static private OutputStreamWriter osw = null;
-	static private BufferedWriter bw = null;
+	static public FileOutputStream fos = null;
+	static public OutputStreamWriter osw = null;
+	static public BufferedWriter bw = null;
 
 	/**
 	 * 通过SPARQL终端获取dbpedia数据
@@ -53,22 +53,22 @@ public class PropertySelection
 	 */
 	static public void getPropertiesViaNet(String ci, int maxNodes) throws IOException
 	{
-		fos = new FileOutputStream("selection-result");
-		osw = new OutputStreamWriter(fos);
-		bw = new BufferedWriter(osw);
-
+		boolean reachMaxNodes = false;
+		GlobalData.pSource.clear();
 		System.out.println("start to search properties in dbpedia...");
+		// ns存待遍历的个体
 		Queue<String> ns = new LinkedBlockingDeque<String>();
+		// os存每个遍历过的个体
 		TreeSet<String> os = new TreeSet<String>();
 
-		int nodes = 0;
+		// ps存每个遍历过的属性
+		TreeSet<String> ps = new TreeSet<String>();
+
 		ns.add(ci);
 		os.add(ci);
 		while (!ns.isEmpty())
 		{
 
-			bw.write("" + os.size());
-			bw.write(" ");
 			String cur = ns.poll();
 			String sparqlQueryString = "select distinct ?p ?o where {<" + cur
 					+ "> ?p ?o .}";
@@ -80,6 +80,7 @@ public class PropertySelection
 			try
 			{
 				ResultSet results = qexec.execSelect();
+
 				for (; results.hasNext();)
 				{
 					QuerySolution soln = results.nextSolution();
@@ -91,26 +92,30 @@ public class PropertySelection
 						continue;
 					}
 					RDFNode o = soln.get("?o");
+					if (ps.contains(p))
+					{
+						continue;
+					}
+					ps.add(p);
 					if (o.isURIResource())
 					{
 						GlobalData.pSource.put(p, GlobalData.P_TYPE_URI);
 						GlobalData.value_source_uri.put(p, new TreeSet<String>());
-						if (!os.contains(o.toString()))
+						if (!os.contains(o.toString()) && !reachMaxNodes)
 						{
 							os.add(o.toString());
 							ns.add(o.toString());
 
-							nodes++;
-							if (nodes > maxNodes)
+							if (os.size() > maxNodes)
 							{
-								ns.clear();
+								reachMaxNodes = true;
 							}
 						}
 					}
 					else
 					{
-						String oo = o.asLiteral().getValue().toString();
-						System.out.println(oo);
+						String oo = o.asLiteral().getLexicalForm();
+						// System.out.println(oo);
 						if (Utilities.isDate(oo))
 						{
 							GlobalData.pSource.put(p, GlobalData.P_TYPE_date);
@@ -133,19 +138,15 @@ public class PropertySelection
 						}
 					}
 				}
-
+				bw.write(GlobalData.pSource.size() + " ");
 			}
 			finally
 			{
 				qexec.close();
 			}
-
-			bw.write("" + GlobalData.pSource.size());
-			bw.newLine();
-
 		}
 
-		bw.close();
+		bw.newLine();
 
 		System.out.println("get " + GlobalData.pSource.size() + " properties in dbpedia");
 		Iterator<String> it = GlobalData.pSource.keySet().iterator();
@@ -303,7 +304,6 @@ public class PropertySelection
 			getPropertiesViaNet("http://dbpedia.org/resource/Black_Humor_(film)", 200);
 			System.out.println(GlobalData.pSource.size());
 			PropertyAlignment.valuesOfPropertyViaNet();
-
 		}
 		catch (MalformedURIException e)
 		{

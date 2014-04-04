@@ -1,9 +1,8 @@
 package tools;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.TreeSet;
-
-import org.apache.xerces.util.URI;
-import org.apache.xerces.util.URI.MalformedURIException;
 
 public class Utilities
 {
@@ -40,7 +39,7 @@ public class Utilities
 	static public boolean isURI(String s)
 	{
 
-		if (s.startsWith("http://"))
+		if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("ftp://"))
 		{
 			return true;
 		}
@@ -55,21 +54,42 @@ public class Utilities
 	 */
 	static public boolean isDate(String s)
 	{
-		String[] ymd = s.split("-");
-		if (ymd.length != 3)
+		boolean result = false;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss hh:mm");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-mm-dd");
+		try
 		{
-			return false;
+			sdf.parse(s);
+			result = true;
 		}
-		else if (!isInteger(ymd[0]) || !isInteger(ymd[1]) || !isInteger(ymd[2]))
+		catch (ParseException pe)
 		{
-			return false;
 		}
-		else if (Integer.parseInt(ymd[1]) > 12 || Integer.parseInt(ymd[1]) < 0
-				|| Integer.parseInt(ymd[2]) > 31 || Integer.parseInt(ymd[2]) < 0)
+		try
 		{
-			return false;
+			sdf2.parse(s);
+			result = true;
 		}
-		return true;
+		catch (ParseException pe)
+		{
+		}
+		// String[] ymd = s.split("-");
+		// if (ymd.length != 3)
+		// {
+		// return false;
+		// }
+		// else if (!isInteger(ymd[0]) || !isInteger(ymd[1]) ||
+		// !isInteger(ymd[2]))
+		// {
+		// return false;
+		// }
+		// else if (Integer.parseInt(ymd[1]) > 12 || Integer.parseInt(ymd[1]) <
+		// 0
+		// || Integer.parseInt(ymd[2]) > 31 || Integer.parseInt(ymd[2]) < 0)
+		// {
+		// return false;
+		// }
+		return result;
 	}
 
 	static public int getMaxIndex(int[] a)
@@ -98,6 +118,27 @@ public class Utilities
 			}
 		}
 		return size;
+	}
+
+	public static <T> int[] unionAndIntersectionSize(TreeSet<T> t1, TreeSet<T> t2)
+	{
+		int size1 = 0;
+		int size2 = 0;
+		for (T o : t1)
+		{
+			if (t2.contains(o))
+			{
+				size2++;
+			}
+			else
+			{
+				size1++;
+			}
+		}
+		size1 += t2.size();
+		//result[0]为并集大小，size2为交集大小
+		int[] result = {size1, size2};
+		return result;
 	}
 
 }
