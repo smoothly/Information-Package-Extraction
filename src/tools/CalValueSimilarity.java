@@ -97,9 +97,9 @@ public class CalValueSimilarity
 					}
 					editDis = editDis / Float.valueOf(times);
 					semanticSim = semanticSim / Float.valueOf(times);
-					float sim = editDis*0.33f+semanticSim*0.33f+conf*0.34f;
+					float sim = editDis * 0.33f + semanticSim * 0.33f + conf * 0.34f;
 					bw.write(p1 + " " + p2 + " " + conf + " " + editDis + " "
-							+ semanticSim + " "+sim);
+							+ semanticSim + " " + sim);
 					bw.newLine();
 				}
 			}
@@ -116,7 +116,10 @@ public class CalValueSimilarity
 	{
 		TreeSet<String> result = new TreeSet<String>();
 		int index = record.indexOf("[");
-		String values = record.substring(index, record.length() - 1);
+		String values = "";
+		if (index == -1)
+			index = 0;
+		values = record.substring(index, record.length() - 1);
 
 		String[] vs = values.split(", ");
 		for (int i = 0; i < vs.length; i++)
@@ -162,7 +165,7 @@ public class CalValueSimilarity
 		// 读属性
 		File file = new File(propertyFile);
 		BufferedReader reader = null;
-		int line = 0;
+	//	int line = 0;
 		try
 		{
 			reader = new BufferedReader(new FileReader(file));
@@ -237,26 +240,25 @@ public class CalValueSimilarity
 			Query query = QueryFactory.create(sparqlQueryString);
 			ARQ.getContext().setTrue(ARQ.useSAX);
 			QueryExecution qexec = null;
-
+			System.out.println(sparqlQueryString);
 			String content = " " + cur;
+			Dataset dataset = null;
+			Model model = null;
 			if (service.length() > 0)
 			{
 				qexec = QueryExecutionFactory.sparqlService(service, query);
 			}
 			else
 			{
-				Dataset dataset = TDBFactory.createDataset(dir);
-				Model model = dataset.getDefaultModel();
+				dataset = TDBFactory.createDataset(dir);
+				model = dataset.getDefaultModel();
 				qexec = QueryExecutionFactory.create(sparqlQueryString, model);
 			}
 			try
 			{
 				ResultSet results = qexec.execSelect();
-				if (!results.hasNext())
-				{
-					continue;
-				}
-				for (; results.hasNext();)
+				System.out.println(results.getRowNumber());
+				while(results.hasNext())
 				{
 					QuerySolution soln = results.nextSolution();
 					RDFNode rdfn = soln.get("?o");
@@ -298,7 +300,7 @@ public class CalValueSimilarity
 							}
 							else
 							{
-								String temp = rdfn.toString().replace("/n", " ");
+								String temp = rdfn.toString().replace("\n", " ");
 								String[] ss = temp.split(" ");
 								typeNum[GlobalData.P_TYPE_string]++;
 								for (int i = 0; i < ss.length; i++)
@@ -324,7 +326,7 @@ public class CalValueSimilarity
 
 			int type = Utilities.getMaxIndex(typeNum);
 			content = cur + " " + values.toString();
-
+			content.replace('\n', ' ');
 			bw[type].write(content);
 			bw[type].newLine();
 		}
@@ -339,11 +341,14 @@ public class CalValueSimilarity
 	public static void main(String[] args) throws IOException
 	{
 		// http://www.linkedmdb.org/sparql
-		// valuesOfPropertyViaNet("",
-		// "F://本体库数据及软件//linkedmdb-latest-dump//linkedmdb-tdb",
-		// "data//linkedmdb-property-value", "data//linkedmdb-property.data");
-		// valuesOfPropertyViaNet("http://dbpedia.org/sparql/", "",
-		// "data//dbpedia-property-value-movie", "data//property-movie.data");
+//		GlobalData.pSource.clear();
+//		valuesOfPropertyViaNet("", "F://本体库数据及软件//linkedmdb-latest-dump//linkedmdb-tdb",
+//				"data//linkedmdb-property-value", "data//linkedmdb-property.data");
+		
+		
+		GlobalData.pSource.clear();
+		valuesOfPropertyViaNet("http://dbpedia.org/sparql", "",
+				"data//dbpedia-property-value-movie", "data//dbpedia-property-movie.data");
 		calConf("data//linkedmdb-property-value0.data",
 				"data//dbpedia-property-value-movie0.data", "data//compare0.data");
 		calConf("data//linkedmdb-property-value1.data",

@@ -39,7 +39,7 @@ public class Utilities
 	static public boolean isURI(String s)
 	{
 
-		if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("ftp://"))
+		if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("ftp://")|| s.startsWith("http:/"))
 		{
 			return true;
 		}
@@ -106,6 +106,31 @@ public class Utilities
 		}
 		return index;
 	}
+	static public int getMinIndex(float[] a)
+	{
+		int index = 0;
+		float min = a[0];
+		for (int i = 1; i < a.length; i++)
+		{
+			if (a[i] < min)
+			{
+				index = i;
+				min = a[i];
+			}
+		}
+		return index;
+	}
+	
+	static public float getAverage(float[] a)
+	{
+		float ave = 0;
+		for (int i = 1; i < a.length; i++)
+		{
+			ave+=a[i];
+		}
+		return ave/a.length;
+	}
+	
 
 	public static <T> int intersectionSize(TreeSet<T> t1, TreeSet<T> t2)
 	{

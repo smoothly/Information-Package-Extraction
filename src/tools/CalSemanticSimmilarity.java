@@ -34,6 +34,10 @@ public class CalSemanticSimmilarity
 
 	public static float run2(String word1, String word2)
 	{
+		if(word1.equals(word2))
+		{
+			return 1;
+		}
 		WS4JConfiguration.getInstance().setMFS(true);
 		RelatednessCalculator rc = rcs[0];
 		double s = rc.calcRelatednessOfWords(word1, word2);
@@ -47,7 +51,7 @@ public class CalSemanticSimmilarity
 	public static void main(String[] args)
 	{
 		long t0 = System.currentTimeMillis();
-		run("low", "low");
+		run("love", "love");
 		long t1 = System.currentTimeMillis();
 		System.out.println("Done in " + (t1 - t0) + " msec.");
 	}
