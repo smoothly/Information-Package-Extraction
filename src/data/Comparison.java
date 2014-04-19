@@ -3,9 +3,7 @@ package data;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 import tools.CalEditDistance;
 import tools.CalSemanticSimmilarity;
@@ -16,7 +14,7 @@ public class Comparison
 	static public final int COMPARISON_EDIT_DIS = 0;
 	static public final int COMPARISON_JACCARD_DIS = 1;
 	static public final int COMPARISON_NUMERIC_DIS = 2;
-	static public final int COMPARISON_SEMANTIC_SIM = 3;
+	//static public final int COMPARISON_SEMANTIC_SIM = 3;
 	static public final int COMPARISON_DATE_DIS = 4;
 
 	static public TreeMap<SubjectPredicate, String> triples = new TreeMap<SubjectPredicate, String>();
@@ -64,11 +62,7 @@ public class Comparison
 				|| property_type == GlobalData.P_TYPE_URI)
 		{
 			double random = Math.random();
-			if (random <= 1.0 / 3.0)
-			{
-				comparison_type = COMPARISON_SEMANTIC_SIM;
-			}
-			else if (random <= 1.0 / 6.0)
+			if (random < 1.0 / 5.0)
 			{
 				comparison_type = COMPARISON_JACCARD_DIS;
 			}
@@ -100,10 +94,10 @@ public class Comparison
 		// }
 		//
 		String result = triples.get(new SubjectPredicate(s, p));
-//		if (result != null && !result.equals(""))
-//		{
-//			System.out.println(result);
-//		}
+		// if (result != null && !result.equals(""))
+		// {
+		// System.out.println(result);
+		// }
 		// s = "<" + s + ">";
 		// p = "<" + p + ">";
 		// String prefix;
@@ -197,12 +191,12 @@ public class Comparison
 	public float getComparison_value(String candidate1, String candidate2)
 	{
 
-		String dir1 = "F://lab//workspace//DBpediaAnalyzer//tdb";
-		String dir = "F://本体库数据及软件//linkedmdb-latest-dump//linkedmdb-tdb";
-		String source_property_value = getObject(candidate1, property_from_source, dir,
-				"", property_type);
-		String target_property_value = getObject(candidate2, property_from_target, dir1,
-				"", property_type);
+		// String dir1 = "F://lab//workspace//DBpediaAnalyzer//tdb";
+		// String dir = "F://本体库数据及软件//linkedmdb-latest-dump//linkedmdb-tdb";
+		String source_property_value = triples.get(new SubjectPredicate(candidate1,
+				property_from_source));
+		String target_property_value = triples.get(new SubjectPredicate(candidate2,
+				property_from_target));
 
 		if (source_property_value == null || target_property_value == null
 				|| source_property_value.length() == 0
@@ -214,128 +208,90 @@ public class Comparison
 		String[] sourceValues = source_property_value.split(" ");
 		String[] targetValues = target_property_value.split(" ");
 		int times = 0;
-		for (int i = 0; i < sourceValues.length; i++)
+		if ((comparison_type == COMPARISON_DATE_DIS)
+				|| comparison_type == COMPARISON_NUMERIC_DIS)
 		{
-			for (int j = 0; j < targetValues.length; j++)
+			for (int i = 0; i < sourceValues.length; i++)
 			{
-				times++;
-				if (comparison_type == COMPARISON_DATE_DIS)
+				if (sourceValues[i].length() == 0)
+					continue;
+				for (int j = 0; j < targetValues.length; j++)
 				{
-					comparison_value += comparison_date(sourceValues[i], targetValues[j]);
-				}
-				else if (comparison_type == COMPARISON_NUMERIC_DIS)
-				{
-					try
+					if (targetValues[j].length() == 0)
+						continue;
+					times++;
+					if (comparison_type == COMPARISON_DATE_DIS)
 					{
-						if (Float.valueOf(sourceValues[i]) == Float
-								.valueOf(targetValues[j]))
-							comparison_value += 1;
-						else
-							comparison_value += 0;
+						comparison_value += comparison_date(sourceValues[i],
+								targetValues[j]);
 					}
-					catch (NumberFormatException nfe)
+					else if (comparison_type == COMPARISON_NUMERIC_DIS)
 					{
-						System.out.println(sourceValues[i] + " or " + targetValues[j]
-								+ " can't be converted to number.");
-					}
-				}
-				else
-				{
-					if (property_type == GlobalData.P_TYPE_URI)
-					{
-						comparison_value += comparison_uri(sourceValues[i],
-								targetValues[j], comparison_type);
-					}
-					else
-					{
-						comparison_value += comparison_string(sourceValues[i],
-								targetValues[j], comparison_type);
+						try
+						{
+							if (Float.valueOf(sourceValues[i]) == Float
+									.valueOf(targetValues[j]))
+								comparison_value += 1;
+							else
+								comparison_value += 0;
+						}
+						catch (NumberFormatException nfe)
+						{
+//							System.out.println(sourceValues[i] + " or " + targetValues[j]
+//									+ " can't be converted to number.");
+						}
 					}
 				}
 			}
 		}
+		comparison_value = comparison_value / times;
+		if (property_type == GlobalData.P_TYPE_URI)
+		{
+			comparison_value = comparison_uri(sourceValues, targetValues, comparison_type);
+		}
+		else
+		{
+			comparison_value = comparison_string(sourceValues, targetValues,
+					comparison_type);
+		}
 
-		return comparison_value / times;
+		return comparison_value;
 	}
 
-	private float comparison_string(String source_property_value,
-			String target_property_value, int comparison_type)
+	private float comparison_string(String[] source_property_value,
+			String[] target_property_value, int comparison_type)
 	{
-		TreeSet<String> value1 = new TreeSet<String>();
-		TreeSet<String> value2 = new TreeSet<String>();
-		String temp = source_property_value.toString().replace("/n", " ");
-		String[] ss1 = temp.split(" ");
-		for (int i = 0; i < ss1.length; i++)
-		{
-			if (ss1[i].length() != 0)
-			{
-				value1.add(ss1[i]);
-			}
-		}
-		temp = target_property_value.toString().replace("/n", " ");
-		String[] ss2 = temp.split(" ");
-		for (int i = 0; i < ss2.length; i++)
-		{
-			if (ss2[i].length() != 0)
-			{
-				value2.add(ss2[i]);
-			}
-		}
-		return comparison_string_set(value1, value2, comparison_type);
+		return comparison_string_set(source_property_value, target_property_value, comparison_type);
 	}
 
-	private float comparison_uri(String source_property_value,
-			String target_property_value, int comparison_type)
+	private float comparison_uri(String[] source_property_value,
+			String[] target_property_value, int comparison_type)
 	{
-		TreeSet<String> value1 = new TreeSet<String>();
-		TreeSet<String> value2 = new TreeSet<String>();
-		// 如果取值是URI，则将前缀去掉，进行tokenize，再存入values中。
-		String[] ss1 = source_property_value.toString().split("/|#");
-		String[] ww1 = ss1[ss1.length - 1].split("([-_ ]|(?<=[^-_ A-Z])(?=[A-Z]))");
-		for (int i = 0; i < ww1.length; i++)
-		{
-			if (ww1[i].length() != 0)
-			{
-				value1.add(ww1[i]);
-			}
-		}
-		String[] ss2 = source_property_value.toString().split("/|#");
-		String[] ww2 = ss2[ss2.length - 1].split("([-_ ]|(?<=[^-_ A-Z])(?=[A-Z]))");
-		for (int i = 0; i < ww2.length; i++)
-		{
-			if (ww2[i].length() != 0)
-			{
-				value2.add(ww2[i].toLowerCase());
-			}
-		}
-		return comparison_string_set(value1, value2, comparison_type);
+		return comparison_string_set(source_property_value, target_property_value, comparison_type);
 	}
 
 	// TODO add other comparison method
 	// the value represents similarity, which means, if the value is small, the
 	// two treeset are different
-	private float comparison_string_set(TreeSet<String> s1, TreeSet<String> s2,
-			int comparison_type)
+	private float comparison_string_set(String[] s1, String[] s2, int comparison_type)
 	{
 		float result = 0;
 
 		if (comparison_type == COMPARISON_JACCARD_DIS)
 		{
-			int[] sizes = Utilities.unionAndIntersectionSize(s1, s2);
-			result = 2 * Float.valueOf(sizes[1]) / Float.valueOf(sizes[2]);
+			int[] sizes = Utilities.unionAndIntersectionSizeForString(s1, s2);
+			result = 2 * Float.valueOf(sizes[0]) / Float.valueOf(sizes[1]);
 		}
 		else
 		{
 			int times = 0;
-			Iterator<String> i1 = s1.iterator();
-			Iterator<String> i2 = s2.iterator();
-			while (i1.hasNext())
+			for (int i = 0; i < s1.length; i++)
 			{
-				String ss1 = i1.next();
-				while (i2.hasNext())
+				String ss1 = s1[i];
+				for (int j = 0; j < s2.length; j++)
 				{
 					times++;
-					String ss2 = i2.next();
+					String ss2 = s2[j];
 					if (comparison_type == COMPARISON_EDIT_DIS)
 						result += CalEditDistance.editDistance(ss1.toLowerCase(),
 								ss2.toLowerCase());

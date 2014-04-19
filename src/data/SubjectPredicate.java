@@ -22,8 +22,8 @@ import com.hp.hpl.jena.tdb.TDBFactory;
 
 public class SubjectPredicate implements Comparable<SubjectPredicate>
 {
-	String subject;
-	String predicate;
+	public String subject;
+	public String predicate;
 
 	public SubjectPredicate(String subject, String predicate)
 	{
@@ -52,7 +52,8 @@ public class SubjectPredicate implements Comparable<SubjectPredicate>
 		return 0;
 	}
 
-	public static TreeMap<SubjectPredicate, String> introduceTriples(String filename)
+	public static TreeMap<SubjectPredicate, String> introduceTriples(String filename,
+			boolean source)
 	{
 
 		TreeMap<SubjectPredicate, String> triples = new TreeMap<SubjectPredicate, String>();
@@ -72,9 +73,14 @@ public class SubjectPredicate implements Comparable<SubjectPredicate>
 				String p = triple[1];
 				String oo = triple[2];
 				String object = "";
-				if (triple.length == 3
-						&& (oo.startsWith("http://") || oo.startsWith("https://")
-								|| oo.startsWith("ftp://") || oo.startsWith("http:/")))
+				
+				if ((source && !PropertyPair.source_property_type.containsKey(p))
+						|| (!source && !PropertyPair.target_property_type.containsKey(p)))
+				{
+					continue;
+				}
+				if ((source && PropertyPair.source_property_type.get(p) == GlobalData.P_TYPE_URI)
+						|| (!source && PropertyPair.target_property_type.get(p) == GlobalData.P_TYPE_URI))
 				{
 					String[] ss = oo.split("/|#");
 					String[] ww = ss[ss.length - 1]
@@ -83,7 +89,7 @@ public class SubjectPredicate implements Comparable<SubjectPredicate>
 					{
 						if (ww[i].length() != 0)
 						{
-							object = object + ww[i] + " ";
+							object = object + ww[i].toLowerCase() + " ";
 						}
 					}
 				}
@@ -91,10 +97,17 @@ public class SubjectPredicate implements Comparable<SubjectPredicate>
 				{
 					for (int i = 2; i < triple.length; i++)
 					{
-						object = object + triple[i] + " ";
+						object = object + triple[i].toLowerCase() + " ";
 					}
 				}
-				triples.put(new SubjectPredicate(s, p), object);
+				SubjectPredicate sp = new SubjectPredicate(s, p);
+				if (triples.containsKey(sp))
+				{
+					String old_o = triples.get(sp);
+					object = old_o + " " + object;
+				}
+				
+				triples.put(sp, object);
 				// System.out.println(s+" "+p+" "+object);
 			}
 			reader1.close();

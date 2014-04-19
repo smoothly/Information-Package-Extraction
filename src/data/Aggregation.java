@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Aggregation
 {
 	static private final int AGGREGATION_FUNCTION_MAX = 0;
-	static private final int AGGREGATION_FUNCTION_MIN = 2;
+	//static private final int AGGREGATION_FUNCTION_MIN = 2;
 	static private final int AGGREGATION_FUNCTION_AVE = 1;
 
 	private float aggregation_value = 0;
@@ -45,8 +45,8 @@ public class Aggregation
 		comparisons.add(new Comparison());
 		weight[0] = 1 - (float) Math.random();
 		weight[1] = 1 - weight[0];
-		aggregatin_type = (int) (Math.random() * 3);
-		setThreshold(-1);
+		aggregatin_type = (int) (Math.random() * 2);
+		setThreshold(0);
 		// System.out.println("创建aggregation threshold:" + this.getThreshold() +
 		// " weight:"
 		// + weight[0] + " " + weight[1]);
@@ -80,22 +80,18 @@ public class Aggregation
 		{
 			aggregation_value = Math.max(num[0] * weight[0], num[1] * weight[1]);
 		}
-		else if (aggregatin_type == AGGREGATION_FUNCTION_MIN)
-		{
-			aggregation_value = Math.min(num[0] * weight[0], num[1] * weight[1]);
-		}
 		else if (aggregatin_type == AGGREGATION_FUNCTION_AVE)
 		{
 			aggregation_value = ((num[0] * weight[0] + num[1] * weight[1]) / 2.0f);
 		}
-		if (this.getThreshold() == -1)
-		{
-			this.setThreshold((num[0] * weight[0] + num[1] * weight[1]) / 2.0f);
-		}
-//		if(aggregation_value!=0)
-//		{
-//			System.out.println("有值");
-//		}
+		// if (this.getThreshold() == -1 || this.getThreshold() == 0)
+		// {
+		this.setThreshold((aggregation_value + threshold) / 2.0f);
+		// }
+		// if(aggregation_value!=0)
+		// {
+		// System.out.println("有值");
+		// }
 		return aggregation_value;
 	}
 

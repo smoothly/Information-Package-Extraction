@@ -1,201 +1,201 @@
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/cinematographer http://dbpedia.org/ontology/cinematography 0
-http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/ontology/country 0
-http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/property/hasPhotoCollection 0
-http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/property/network 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/editing 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/hasPhotoCollection 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/film_cut http://dbpedia.org/ontology/wikiPageExternalLink 0
-http://data.linkedmdb.org/resource/movie/film_cut http://dbpedia.org/property/hasPhotoCollection 0
-http://data.linkedmdb.org/resource/movie/film_cut http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/film_cut http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0
-http://data.linkedmdb.org/resource/movie/film_format http://dbpedia.org/property/hasPhotoCollection 0
-http://data.linkedmdb.org/resource/movie/film_format http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/language 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://purl.org/dc/terms/subject 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/film_story_contributor http://xmlns.com/foaf/0.1/depiction 0
-http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/editing 0
-http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/language 0
-http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/property/hasPhotoCollection 0
-http://data.linkedmdb.org/resource/movie/film_subject http://purl.org/dc/terms/subject 0
-http://data.linkedmdb.org/resource/movie/film_subject http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/film_subject http://xmlns.com/foaf/0.1/depiction 0
-http://data.linkedmdb.org/resource/movie/film_subject http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0
-http://data.linkedmdb.org/resource/movie/genre http://dbpedia.org/property/wordnet_type 0
-http://data.linkedmdb.org/resource/movie/genre http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/editing 0
-http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/language 0
-http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/language http://purl.org/dc/terms/subject 0
-http://data.linkedmdb.org/resource/movie/language http://xmlns.com/foaf/0.1/depiction 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/editing 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/language 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://purl.org/dc/terms/subject 0
-http://data.linkedmdb.org/resource/movie/music_contributor http://xmlns.com/foaf/0.1/depiction 0
-http://data.linkedmdb.org/resource/movie/performance http://dbpedia.org/ontology/cinematography 0
-http://data.linkedmdb.org/resource/movie/performance http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/writer 0
-http://data.linkedmdb.org/resource/movie/production_company http://dbpedia.org/ontology/country 0
-http://data.linkedmdb.org/resource/movie/production_company http://dbpedia.org/property/network 0
-http://data.linkedmdb.org/resource/movie/production_company http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/editing 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/language 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/musicComposer 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://purl.org/dc/terms/subject 0
-http://data.linkedmdb.org/resource/movie/story_contributor http://xmlns.com/foaf/0.1/depiction 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/director 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/distributor 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/narrator 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/producer 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/writer 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/artist 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/director 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/narrator 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/producer 0
-http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/writer 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/basedOn 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/country 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/director 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/editing 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/musicComposer 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/narrator 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/producer 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/starring 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/thumbnail 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/writer 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/artist 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/director 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/hasPhotoCollection 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/narrator 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/network 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/producer 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/starring 0
-http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/writer 0
-http://dbpedia.org/property/hasPhotoCollection http://purl.org/dc/terms/subject 0
-http://dbpedia.org/property/hasPhotoCollection http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://dbpedia.org/property/hasPhotoCollection http://www.w3.org/ns/prov#wasDerivedFrom 0
-http://dbpedia.org/property/hasPhotoCollection http://xmlns.com/foaf/0.1/depiction 0
-http://dbpedia.org/property/hasPhotoCollection http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0
-http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://dbpedia.org/property/wordnet_type 0
-http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0
-http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/editing 0
-http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/language 0
-http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/musicComposer 0
-http://www.w3.org/2004/02/skos/core#subject http://purl.org/dc/terms/subject 0
-http://www.w3.org/2004/02/skos/core#subject http://xmlns.com/foaf/0.1/depiction 0
-http://www.w3.org/2004/02/skos/core#subject http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0
-http://xmlns.com/foaf/0.1/based_near http://dbpedia.org/ontology/basedOn 0
-http://xmlns.com/foaf/0.1/page http://dbpedia.org/ontology/wikiPageExternalLink 0
-http://xmlns.com/foaf/0.1/page http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0
-http://purl.org/dc/terms/title http://dbpedia.org/ontology/abstract 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/caption 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/country 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/cover 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/editing 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/extra 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/genre 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/label 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/language 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/lastAlbum 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/music 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/name 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/nextAlbum 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/note 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/screenplay 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/story 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/studio 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/thisAlbum 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/title 1
-http://purl.org/dc/terms/title http://dbpedia.org/property/type 1
-http://purl.org/dc/terms/title http://www.w3.org/2000/01/rdf-schema#comment 1
-http://purl.org/dc/terms/title http://www.w3.org/2000/01/rdf-schema#label 1
-http://purl.org/dc/terms/title http://xmlns.com/foaf/0.1/name 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/ontology/abstract 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/cinematography 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/cover 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/genre 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/label 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/lastAlbum 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/music 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/name 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/note 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/story 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/title 1
-http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/type 1
-http://www.w3.org/2000/01/rdf-schema#label http://www.w3.org/2000/01/rdf-schema#comment 1
-http://www.w3.org/2000/01/rdf-schema#label http://www.w3.org/2000/01/rdf-schema#label 1
-http://www.w3.org/2000/01/rdf-schema#label http://xmlns.com/foaf/0.1/name 1
-http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/Work/runtime 2
-http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/budget 2
-http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/runtime 2
-http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/property/runtime 2
-http://data.linkedmdb.org/resource/movie/initial_release_date http://dbpedia.org/ontology/releaseDate 3
-http://data.linkedmdb.org/resource/movie/initial_release_date http://dbpedia.org/property/released 3
-http://purl.org/dc/terms/date http://dbpedia.org/ontology/releaseDate 3
-http://purl.org/dc/terms/date http://dbpedia.org/property/released 3
-http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/ontology/wikiPageID 4
-http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/ontology/wikiPageInLinkCount 4
-http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/property/id 4
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/director 0 0.15968987
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/distributor 0 0.11250389
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/narrator 0 0.146811
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/producer 0 0.11887877
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/ontology/writer 0 0.16639519
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/artist 0 0.16549042
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/director 0 0.1596802
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/narrator 0 0.14681137
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/producer 0 0.11889497
+http://data.linkedmdb.org/resource/movie/actor http://dbpedia.org/property/writer 0 0.1664267
+http://data.linkedmdb.org/resource/movie/cinematographer http://dbpedia.org/ontology/cinematography 0 0.16514325
+http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/ontology/country 0 0.66153735
+http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/property/hasPhotoCollection 0 0.10053582
+http://data.linkedmdb.org/resource/movie/country http://dbpedia.org/property/network 0 0.17949636
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/director 0 0.6603548
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/distributor 0 0.14048988
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/narrator 0 0.1489539
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/producer 0 0.12178498
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/ontology/writer 0 0.15371335
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/artist 0 0.13405457
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/director 0 0.6603332
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/narrator 0 0.14895646
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/producer 0 0.12178836
+http://data.linkedmdb.org/resource/movie/director http://dbpedia.org/property/writer 0 0.1537374
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/director 0 0.15848474
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/distributor 0 0.11934692
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/editing 0 0.110176615
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/narrator 0 0.12968045
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/producer 0 0.12605949
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/ontology/writer 0 0.1925771
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/artist 0 0.13726431
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/director 0 0.1585156
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/narrator 0 0.12969945
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/producer 0 0.12608074
+http://data.linkedmdb.org/resource/movie/editor http://dbpedia.org/property/writer 0 0.19265147
+http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/ontology/writer 0 0.10516029
+http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/property/artist 0 0.105108604
+http://data.linkedmdb.org/resource/movie/featured_film_location http://dbpedia.org/property/writer 0 0.10525811
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/director 0 0.29500932
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/distributor 0 0.11014442
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/narrator 0 0.11922087
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/producer 0 0.10801957
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/ontology/writer 0 0.14553064
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/artist 0 0.14800198
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/director 0 0.29505852
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/hasPhotoCollection 0 0.12452806
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/narrator 0 0.119065106
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/producer 0 0.10799071
+http://data.linkedmdb.org/resource/movie/film_art_director http://dbpedia.org/property/writer 0 0.14565016
+http://data.linkedmdb.org/resource/movie/film_cut http://dbpedia.org/ontology/wikiPageExternalLink 0 0.11799565
+http://data.linkedmdb.org/resource/movie/film_cut http://dbpedia.org/property/hasPhotoCollection 0 0.1246814
+http://data.linkedmdb.org/resource/movie/film_cut http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.14185967
+http://data.linkedmdb.org/resource/movie/film_cut http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0 0.107047535
+http://data.linkedmdb.org/resource/movie/film_format http://dbpedia.org/property/hasPhotoCollection 0 0.10020416
+http://data.linkedmdb.org/resource/movie/film_format http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.11080075
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/distributor 0 0.102574684
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/language 0 0.10391114
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/musicComposer 0 0.10157238
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/ontology/writer 0 0.10484769
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/property/artist 0 0.10306721
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://dbpedia.org/property/writer 0 0.10487515
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://purl.org/dc/terms/subject 0 0.12059383
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.10696513
+http://data.linkedmdb.org/resource/movie/film_story_contributor http://xmlns.com/foaf/0.1/depiction 0 0.10528691
+http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/editing 0 0.12456027
+http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/language 0 0.13920537
+http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/ontology/musicComposer 0 0.11885546
+http://data.linkedmdb.org/resource/movie/film_subject http://dbpedia.org/property/hasPhotoCollection 0 0.10845501
+http://data.linkedmdb.org/resource/movie/film_subject http://purl.org/dc/terms/subject 0 0.37452623
+http://data.linkedmdb.org/resource/movie/film_subject http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.13038293
+http://data.linkedmdb.org/resource/movie/film_subject http://xmlns.com/foaf/0.1/depiction 0 0.14173773
+http://data.linkedmdb.org/resource/movie/film_subject http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0 0.12792054
+http://data.linkedmdb.org/resource/movie/genre http://dbpedia.org/property/wordnet_type 0 0.18999262
+http://data.linkedmdb.org/resource/movie/genre http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.2849035
+http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/editing 0 0.16988312
+http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/language 0 0.6613086
+http://data.linkedmdb.org/resource/movie/language http://dbpedia.org/ontology/musicComposer 0 0.12876514
+http://data.linkedmdb.org/resource/movie/language http://purl.org/dc/terms/subject 0 0.19609004
+http://data.linkedmdb.org/resource/movie/language http://xmlns.com/foaf/0.1/depiction 0 0.16648845
+http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/distributor 0 0.10531057
+http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/editing 0 0.10859404
+http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/language 0 0.12682165
+http://data.linkedmdb.org/resource/movie/music_contributor http://dbpedia.org/ontology/musicComposer 0 0.21277876
+http://data.linkedmdb.org/resource/movie/music_contributor http://purl.org/dc/terms/subject 0 0.13789019
+http://data.linkedmdb.org/resource/movie/music_contributor http://xmlns.com/foaf/0.1/depiction 0 0.11393496
+http://data.linkedmdb.org/resource/movie/performance http://dbpedia.org/ontology/cinematography 0 0.10592747
+http://data.linkedmdb.org/resource/movie/performance http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.11391849
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/director 0 0.12114868
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/distributor 0 0.11047302
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/musicComposer 0 0.16991313
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/narrator 0 0.10919261
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/producer 0 0.6610082
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/ontology/writer 0 0.14629701
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/artist 0 0.30577403
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/director 0 0.12112702
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/narrator 0 0.10919557
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/producer 0 0.6610111
+http://data.linkedmdb.org/resource/movie/producer http://dbpedia.org/property/writer 0 0.1463352
+http://data.linkedmdb.org/resource/movie/production_company http://dbpedia.org/ontology/country 0 0.17436619
+http://data.linkedmdb.org/resource/movie/production_company http://dbpedia.org/property/network 0 0.121067315
+http://data.linkedmdb.org/resource/movie/production_company http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.13366914
+http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/distributor 0 0.10846137
+http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/editing 0 0.10298497
+http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/language 0 0.11511836
+http://data.linkedmdb.org/resource/movie/story_contributor http://dbpedia.org/ontology/musicComposer 0 0.10058067
+http://data.linkedmdb.org/resource/movie/story_contributor http://purl.org/dc/terms/subject 0 0.13832617
+http://data.linkedmdb.org/resource/movie/story_contributor http://xmlns.com/foaf/0.1/depiction 0 0.120506406
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/director 0 0.15331236
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/distributor 0 0.12745175
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/narrator 0 0.28727284
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/producer 0 0.14650558
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/ontology/writer 0 0.6606938
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/artist 0 0.16091692
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/director 0 0.15329185
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/narrator 0 0.2872753
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/producer 0 0.1465097
+http://data.linkedmdb.org/resource/movie/writer http://dbpedia.org/property/writer 0 0.6607329
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/basedOn 0 0.1238237
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/country 0 0.11799614
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/director 0 0.13946652
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/editing 0 0.12841393
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/musicComposer 0 0.1697181
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/narrator 0 0.12505278
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/producer 0 0.17508739
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/starring 0 0.19144112
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/thumbnail 0 0.107253976
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/ontology/writer 0 0.17880753
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/artist 0 0.17998716
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/director 0 0.14133026
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/hasPhotoCollection 0 0.34353384
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/narrator 0 0.107968226
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/network 0 0.111633584
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/producer 0 0.15772325
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/starring 0 0.21246685
+http://dbpedia.org/property/hasPhotoCollection http://dbpedia.org/property/writer 0 0.17059949
+http://dbpedia.org/property/hasPhotoCollection http://purl.org/dc/terms/subject 0 0.13599151
+http://dbpedia.org/property/hasPhotoCollection http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.14917567
+http://dbpedia.org/property/hasPhotoCollection http://www.w3.org/ns/prov#wasDerivedFrom 0 0.12818334
+http://dbpedia.org/property/hasPhotoCollection http://xmlns.com/foaf/0.1/depiction 0 0.12347204
+http://dbpedia.org/property/hasPhotoCollection http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0 0.15549813
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://dbpedia.org/property/wordnet_type 0 0.38937503
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.6602121
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0 0.10042448
+http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/editing 0 0.16460119
+http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/language 0 0.19727527
+http://www.w3.org/2004/02/skos/core#subject http://dbpedia.org/ontology/musicComposer 0 0.13414647
+http://www.w3.org/2004/02/skos/core#subject http://purl.org/dc/terms/subject 0 0.6627563
+http://www.w3.org/2004/02/skos/core#subject http://xmlns.com/foaf/0.1/depiction 0 0.20764565
+http://www.w3.org/2004/02/skos/core#subject http://xmlns.com/foaf/0.1/isPrimaryTopicOf 0 0.1431322
+http://xmlns.com/foaf/0.1/based_near http://dbpedia.org/ontology/basedOn 0 0.21862501
+http://xmlns.com/foaf/0.1/page http://dbpedia.org/ontology/wikiPageExternalLink 0 0.24644071
+http://xmlns.com/foaf/0.1/page http://www.w3.org/1999/02/22-rdf-syntax-ns#type 0 0.11003286
+http://purl.org/dc/terms/title http://dbpedia.org/ontology/abstract 1 0.14052607
+http://purl.org/dc/terms/title http://dbpedia.org/property/caption 1 0.12960063
+http://purl.org/dc/terms/title http://dbpedia.org/property/country 1 0.101985425
+http://purl.org/dc/terms/title http://dbpedia.org/property/cover 1 0.12331453
+http://purl.org/dc/terms/title http://dbpedia.org/property/editing 1 0.2591254
+http://purl.org/dc/terms/title http://dbpedia.org/property/extra 1 0.15697454
+http://purl.org/dc/terms/title http://dbpedia.org/property/genre 1 0.14325742
+http://purl.org/dc/terms/title http://dbpedia.org/property/label 1 0.40999687
+http://purl.org/dc/terms/title http://dbpedia.org/property/language 1 0.19314817
+http://purl.org/dc/terms/title http://dbpedia.org/property/lastAlbum 1 0.16705242
+http://purl.org/dc/terms/title http://dbpedia.org/property/music 1 0.2593529
+http://purl.org/dc/terms/title http://dbpedia.org/property/name 1 0.40956184
+http://purl.org/dc/terms/title http://dbpedia.org/property/nextAlbum 1 0.15232225
+http://purl.org/dc/terms/title http://dbpedia.org/property/note 1 0.30386615
+http://purl.org/dc/terms/title http://dbpedia.org/property/screenplay 1 0.21367632
+http://purl.org/dc/terms/title http://dbpedia.org/property/story 1 0.21173643
+http://purl.org/dc/terms/title http://dbpedia.org/property/studio 1 0.11978575
+http://purl.org/dc/terms/title http://dbpedia.org/property/thisAlbum 1 0.15657344
+http://purl.org/dc/terms/title http://dbpedia.org/property/title 1 0.7491629
+http://purl.org/dc/terms/title http://dbpedia.org/property/type 1 0.18356273
+http://purl.org/dc/terms/title http://www.w3.org/2000/01/rdf-schema#comment 1 0.23313415
+http://purl.org/dc/terms/title http://www.w3.org/2000/01/rdf-schema#label 1 0.36528754
+http://purl.org/dc/terms/title http://xmlns.com/foaf/0.1/name 1 0.40963128
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/ontology/abstract 1 0.16132738
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/cinematography 1 0.118056424
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/cover 1 0.101337925
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/genre 1 0.12664272
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/label 1 0.6833894
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/lastAlbum 1 0.13233198
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/music 1 0.12485658
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/name 1 0.45497528
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/note 1 0.13707699
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/story 1 0.101061314
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/title 1 0.36631465
+http://www.w3.org/2000/01/rdf-schema#label http://dbpedia.org/property/type 1 0.15996991
+http://www.w3.org/2000/01/rdf-schema#label http://www.w3.org/2000/01/rdf-schema#comment 1 0.13052404
+http://www.w3.org/2000/01/rdf-schema#label http://www.w3.org/2000/01/rdf-schema#label 1 0.6688376
+http://www.w3.org/2000/01/rdf-schema#label http://xmlns.com/foaf/0.1/name 1 0.4502876
+http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/Work/runtime 2 0.69301474
+http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/budget 2 0.1285681
+http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/ontology/runtime 2 0.689455
+http://data.linkedmdb.org/resource/movie/runtime http://dbpedia.org/property/runtime 2 0.7478334
+http://data.linkedmdb.org/resource/movie/initial_release_date http://dbpedia.org/ontology/releaseDate 3 0.50216925
+http://data.linkedmdb.org/resource/movie/initial_release_date http://dbpedia.org/property/released 3 0.3589376
+http://purl.org/dc/terms/date http://dbpedia.org/ontology/releaseDate 3 0.6018727
+http://purl.org/dc/terms/date http://dbpedia.org/property/released 3 0.27185425
+http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/ontology/wikiPageID 4 0.375833
+http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/ontology/wikiPageInLinkCount 4 0.10568477
+http://data.linkedmdb.org/resource/movie/filmid http://dbpedia.org/property/id 4 0.29349044

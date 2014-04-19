@@ -39,7 +39,8 @@ public class Utilities
 	static public boolean isURI(String s)
 	{
 
-		if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("ftp://")|| s.startsWith("http:/"))
+		if (s.startsWith("http://") || s.startsWith("https://") || s.startsWith("ftp://")
+				|| s.startsWith("http:/"))
 		{
 			return true;
 		}
@@ -106,6 +107,7 @@ public class Utilities
 		}
 		return index;
 	}
+
 	static public int getMinIndex(float[] a)
 	{
 		int index = 0;
@@ -120,17 +122,16 @@ public class Utilities
 		}
 		return index;
 	}
-	
+
 	static public float getAverage(float[] a)
 	{
 		float ave = 0;
-		for (int i = 1; i < a.length; i++)
+		for (int i = 0; i < a.length; i++)
 		{
-			ave+=a[i];
+			ave += a[i];
 		}
-		return ave/a.length;
+		return ave / a.length;
 	}
-	
 
 	public static <T> int intersectionSize(TreeSet<T> t1, TreeSet<T> t2)
 	{
@@ -161,9 +162,30 @@ public class Utilities
 			}
 		}
 		size1 += t2.size();
-		//result[0]为并集大小，size2为交集大小
+		// result[0]为并集大小，size2为交集大小
 		int[] result = {size1, size2};
 		return result;
 	}
 
+	public static <T> int[] unionAndIntersectionSizeForString(String[] t1, String[] t2)
+	{
+		int size1 = 0;
+		int size2 = 0;
+		int len1 = t1.length;
+		int len2 = t2.length;
+		for (int i = 0; i < len1; i++)
+		{
+			for (int j = 0; j < len2; j++)
+			{
+				if (t1[i].equals(t2[j]))
+				{
+					size2++;
+				}
+			}
+		}
+		size1 = len1 + len2 - size2;
+		// result[0]为并集大小，size2为交集大小
+		int[] result = {size2, size1};
+		return result;
+	}
 }

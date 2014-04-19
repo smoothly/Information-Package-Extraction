@@ -32,7 +32,7 @@ public class PropertyConvert
 					String psource = content[0];
 					if (Float.valueOf(content[5]) >= threshold)
 					{
-						bw.write(psource + " " + content[1] + " " + i);
+						bw.write(psource + " " + content[1] + " " + i + " " + content[5]);
 						bw.newLine();
 					}
 				}
@@ -51,9 +51,10 @@ public class PropertyConvert
 	 */
 	public static void main(String[] args) throws IOException
 	{
-		String[] filenames = {"data//compare0.data","data//compare1.data","data//compare2.data","data//compare3.data","data//compare4.data"};
+		String[] filenames = {"data//compare0.data", "data//compare1.data",
+				"data//compare2.data", "data//compare3.data", "data//compare4.data"};
 		// TODO Auto-generated method stub
 		convert(filenames, "data//property-pair.data", 0.1f);
-		
+
 	}
 }
